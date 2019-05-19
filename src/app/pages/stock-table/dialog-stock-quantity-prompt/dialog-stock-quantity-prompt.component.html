@@ -1,0 +1,10 @@
+<nb-card>
+  <nb-card-header>Digite a quantidade</nb-card-header>
+  <nb-card-body>
+    <input #quantity nbInput class="input-modal" splaceholder="Quantidade">
+  </nb-card-body>
+  <nb-card-footer>
+    <button nbButton status="danger" (click)="cancel()">Cancelar</button>
+    <button nbButton status="success" class="confirm-button" (click)="submit(+quantity.value)">Comprar</button>
+  </nb-card-footer>
+</nb-card>
